@@ -3,9 +3,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Survey Page</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <title>Survey Page</title>  
 </head>
 <body>
+    <!-- <div id="color">
+
+    </div> -->
     <div id="form">
         <div id="head">
             <div id="Title">
@@ -17,7 +22,36 @@
         </div>
         <div id="survey-form">
             <form action="">
-                
+                <label for="name" id="name-label">name:</label>
+                <input type="text" id="name" placeholder="name"> 
+                <label for="email" id="email-label" >email:</label>
+                <input type="text" id="email"placeholder="email">
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" id="number" min="18" max="50" placeholder="Age">
+                <div id="dropdown">
+                    <select id="profession">Which Option correctly descripbes you?</button>
+                    <option value="Student">Student</a>
+                    <option value="Working Professional">Working Professional</a>
+                    <option value="Free Lancher">Free Lancher</a>
+                    <option value="Prefer not to say">Prefer not to say</a>
+                    <option value="Others">Others</a>
+                </div>
+                <div id="radio">
+                    <p>Favarate Sports</p>
+                    <input type="radio" id="Cricket" name="sports" value="Crickets"><label for="Cricket" id="sports-label">Cricket</label>
+                    <input type="radio" id="Football" name="sports" value="Football"><label for="Football" id="sports-label">Football</label>
+                    <input type="radio" id="Boxing" name="sports" value="Boxing"><label for="Boxing" id="sports-label">Boxing</label>
+                    <input type="radio" id="Kabadi" name="sports" value="Kabadi"><label for="Kabadi" id="sports-label">Kabadi</label>
+                </div>
+                <div id="checkboxes">
+                    <p>What are you good at <span>(only technical)</span></p>
+                    <input type="checkbox" id="Front-End-Developer" name="Front-End-Developer" value="Front-End-Developer"><label for="Front-End-Developer" id="professional-label">Front-End-Developer</label>
+                    <input type="checkbox" id="Back-End-Developer" name="Back-End-Developer" value="Back-End-Developer"><label for="Back-End-Developer"   id="professional-label">Back-End-Developer</label>
+                    <input type="checkbox" id="Open-Source" name="Open-Source" value="Open-Source"><label for="Open-Source" id="professional-label">Open-Source</label>
+                    <input type="checkbox" id="Machine-Learning" name="Machine-Learning" value="Machine-Learning"><label for="Machine-Learning" id="professional-label">Machine-Learning</label>
+                </div>
+                <input type="text">
+                <button type="submit" id="submit">Submit</button>
             </form>
         </div>
     </div>
