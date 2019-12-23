@@ -27,7 +27,7 @@ label, p{
     font-weight: bold;
     /* letter-spacing: 5px; */
 }
-button, select, input[type="text"], input[type="number"]{
+button, select, input[type="text"], input[type="number"], input[type="email"]{
     padding: 7px 0 7px 5px;
     border-radius: 7px;
 }
