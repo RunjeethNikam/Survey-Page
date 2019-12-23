@@ -31,6 +31,9 @@ button, select, input[type="text"], input[type="number"], input[type="email"]{
     padding: 7px 0 7px 5px;
     border-radius: 7px;
 }
+button{
+    background-color: hsl(16.1, 100%, 80%);
+}
 option{
     width: 10px;
 }
