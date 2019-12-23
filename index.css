@@ -1,18 +1,42 @@
 body{
     margin: 0px;
     position: relative;
+    background-color: hsl(16.1, 56%, 70%);
+    color: hsl(16.1, 56%, 20%);;
 }
 #form{
     position: relative;
     background-color: hsl(16.1, 56%, 50%);
-    /* margin-top: 50px; */
     width: 75vw;
     margin: auto;
+    padding: 30px;
+    border-radius: 15px;
     top: 50px;
-    border-radius: 15px;
 }
-input{
-    border-radius: 15px;
+#survey-form{
+    padding-top: 15px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+label, p{
+    padding-bottom: 5px;
+    font-size: x-large;
+    font-weight: bold;
+    /* letter-spacing: 5px; */
+}
+button, select, input[type="text"], input[type="number"]{
+    padding: 7px 0 7px 5px;
+    border-radius: 7px;
+}
+option{
+    width: 10px;
+}
+
+input::placeholder{
+    padding-left: 5px;
 }
 #color{
     position: absolute;
@@ -23,15 +47,23 @@ input{
     background-color: coral;  
 }
 #head{
-    word-spacing: 10px;
-    font-size: larger;
-    font-weight: bolder;
-    font-family: 'Lobster', cursive;
-    height: 100px;
+    word-spacing: 5px;
+    /* display: flex;
+    flex-direction: column; */
+    height: auto;
+    justify-content: space-evenly;
 }
 #Title{
     text-align: center;
+    font-family: 'Girassol', cursive;
+    letter-spacing: 2px;
+    /* padding-top: 15px; */
+    font-size: larger;
 }
 #description{
     text-align: center;
+    font-family: 'Lobster', cursive;
+    /* padding: 10px; */
+    letter-spacing: 2px;
+    font-size: x-large;
 }

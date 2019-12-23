@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
     <title>Survey Page</title>  
 </head>
-<body>
+<body id="main">
     <!-- <div id="color">
 
     </div> -->
     <div id="form">
         <div id="head">
             <div id="Title">
-                Google Survey Form
+                <h1>Google Survey Form</h1>
             </div>
             <div id="description">
                 Thank you for sharing your personal information with us.
@@ -22,20 +23,26 @@
         </div>
         <div id="survey-form">
             <form action="">
-                <label for="name" id="name-label">name:</label>
-                <input type="text" id="name" placeholder="name"> 
-                <label for="email" id="email-label" >email:</label>
-                <input type="text" id="email"placeholder="email">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" placeholder="name" required> 
+                <br>
+                <label for="email" id="email-label" >Email:</label>
+                <input type="email" id="email"placeholder="email" required>
+                <br>
                 <label for="number" id="number-label">Age:</label>
                 <input type="number" id="number" min="18" max="50" placeholder="Age">
+                <br>
                 <div id="dropdown">
-                    <select id="profession">Which Option correctly descripbes you?</button>
-                    <option value="Student">Student</a>
-                    <option value="Working Professional">Working Professional</a>
-                    <option value="Free Lancher">Free Lancher</a>
-                    <option value="Prefer not to say">Prefer not to say</a>
-                    <option value="Others">Others</a>
+                    <p>Which Option correctly descripbes you?</p>
+                    <select id="profession">
+                    <option value="Student">Student</option>    
+                    <option value="Working Professional">Working Professional</option>
+                    <option value="Free Lancher">Free Lancher</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                    <option value="Others">Others</option>
+                    </select>
                 </div>
+                <br>
                 <div id="radio">
                     <p>Favarate Sports</p>
                     <input type="radio" id="Cricket" name="sports" value="Crickets"><label for="Cricket" id="sports-label">Cricket</label>
@@ -43,14 +50,18 @@
                     <input type="radio" id="Boxing" name="sports" value="Boxing"><label for="Boxing" id="sports-label">Boxing</label>
                     <input type="radio" id="Kabadi" name="sports" value="Kabadi"><label for="Kabadi" id="sports-label">Kabadi</label>
                 </div>
+                <br>
                 <div id="checkboxes">
                     <p>What are you good at <span>(only technical)</span></p>
-                    <input type="checkbox" id="Front-End-Developer" name="Front-End-Developer" value="Front-End-Developer"><label for="Front-End-Developer" id="professional-label">Front-End-Developer</label>
-                    <input type="checkbox" id="Back-End-Developer" name="Back-End-Developer" value="Back-End-Developer"><label for="Back-End-Developer"   id="professional-label">Back-End-Developer</label>
-                    <input type="checkbox" id="Open-Source" name="Open-Source" value="Open-Source"><label for="Open-Source" id="professional-label">Open-Source</label>
-                    <input type="checkbox" id="Machine-Learning" name="Machine-Learning" value="Machine-Learning"><label for="Machine-Learning" id="professional-label">Machine-Learning</label>
+                    <input type="checkbox" id="Front-End-Developer" name="Front-End-Developer" value="Front-End-Developer"><label for="Front-End-Developer" id="professional-label">Front-End-Developer</label><br>
+                    <input type="checkbox" id="Back-End-Developer" name="Back-End-Developer" value="Back-End-Developer"><label for="Back-End-Developer"   id="professional-label">Back-End-Developer</label><br>
+                    <input type="checkbox" id="Open-Source" name="Open-Source" value="Open-Source"><label for="Open-Source" id="professional-label">Open-Source</label><br>
+                    <input type="checkbox" id="Machine-Learning" name="Machine-Learning" value="Machine-Learning"><label for="Machine-Learning" id="professional-label">Machine-Learning</label><br>
                 </div>
-                <input type="text">
+                <br>
+                <p>Any comment or Suggestion?</p>
+                <textarea name="message" rows="10" cols="30"></textarea>
+                <br>
                 <button type="submit" id="submit">Submit</button>
             </form>
         </div>
